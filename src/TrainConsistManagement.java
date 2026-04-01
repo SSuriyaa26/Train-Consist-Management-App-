@@ -4,29 +4,32 @@ public class TrainConsistManagement {
         List<String> passengerBoots = new ArrayList<>();
 
         System.out.println("======================================");
-        System.out.println("UC3 - Track Unique Bogie IDs");
+        System.out.println("UC4 - Maintain Ordered Bogie Consist");
         System.out.println("======================================\n");
 
-        Set<String> bogies = new HashSet<>();
+        List<String> trainConsist = new LinkedList<>();
 
-        bogies.add("BG101");
-        bogies.add("BG102");
-        bogies.add("BG103");
-        bogies.add("BG104");
+        trainConsist.add("Engine");
+        trainConsist.add("Sleeper");
+        trainConsist.add("AC");
+        trainConsist.add("Cargo");
+        trainConsist.add("Guard");
 
-        bogies.add("BG101");
-        bogies.add("BG102");
+        System.out.println("Initial Train Consist:");
+        System.out.println(trainConsist);
 
-        System.out.println("Bogie IDs After Insertion:");
-        System.out.println(bogies);
+        trainConsist.add(2, "Pantry");
 
-        System.out.println("\nNote:");
-        System.out.println("Duplicates are automatically ignored by HashSet.");
+        System.out.println("\nAfter Adding Pantry Car at Position 2:");
+        System.out.println(trainConsist);
 
-        System.out.println("\nFinal Unique Train Bogie IDs:");
-        System.out.println(bogies);
+        trainConsist.remove(0);
+        trainConsist.remove(trainConsist.size() - 1);
 
+        System.out.println("\nAfter Removing First and Last Bogies:");
+        System.out.println(trainConsist);
 
+        System.out.println("\nUC4 operations completed successfully...");
 
     }
 }
