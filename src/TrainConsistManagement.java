@@ -18,7 +18,6 @@ public class TrainConsistManagement {
 
         System.out.println("Final Train Formation:");
         System.out.println(formation);
-
         System.out.println("\nNote:");
         System.out.println("LinkedHashSet preserves insertion order and removes duplicates automatically.");
 
