@@ -3,8 +3,6 @@ public class TrainConsistManagement {
     public static void main(String[] args) {
         List<String> passengerBoots = new ArrayList<>();
 
-
-
         System.out.println("\n======================================");
         System.out.println("UC2 - Add Passenger Bogies to Train");
         System.out.println("======================================\n");
