@@ -1,6 +1,5 @@
 import java.util.*;
 import java.util.stream.Collectors;
-
 class Bogie {
     private String name;
     private int capacity;
